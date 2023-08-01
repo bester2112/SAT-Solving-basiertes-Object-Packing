@@ -1,0 +1,21 @@
+Laden Sie den Chrome WebDriver von der offiziellen Website herunter(https://sites.google.com/chromium.org/driver/?pli=1).
+Wählen Sie die Version aus, die Ihrer installierten Google Chrome-Version entspricht.
+
+Öffnen Sie den Ordner, in dem der Chrome WebDriver heruntergeladen wurde (normalerweise der "Downloads"-Ordner)
+und entpacken Sie die ZIP-Datei.
+
+Öffnen Sie ein Terminalfenster und navigieren Sie zum Ordner, in dem der Chrome WebDriver entpackt wurde,
+zum Beispiel:
+
+"cd ~/Downloads/"
+Verschieben Sie den Chrome WebDriver in den /usr/local/bin-Ordner, damit er im Systempfad verfügbar ist:
+
+"sudo mv chromedriver /usr/local/bin/"
+Geben Sie Ihr Administrator-Passwort ein, wenn Sie dazu aufgefordert werden.
+
+Jetzt sollte der Chrome WebDriver in Ihrem Systempfad verfügbar sein, und Sie können selenium mit dem
+Chrome WebDriver verwenden. Wenn Sie den Pfad später ändern möchten oder Probleme auftreten, stellen Sie sicher,
+dass der chromedriver-Pfad in Ihrem PATH-Environment-Variable enthalten ist. Sie können dies überprüfen,
+indem Sie im Terminal echo $PATH eingeben. Wenn /usr/local/bin nicht im Pfad aufgeführt ist,
+fügen Sie es in Ihrer Shell-Konfigurationsdatei hinzu
+(z.B. ~/.bashrc, ~/.bash_profile oder ~/.zshrc, abhängig von der verwendeten Shell).
