@@ -1,0 +1,95 @@
+INFO: Started
+INFO: SessionName = 01-07-2023--00-21-benchmark__polyomino-01__metapod-txt
+INFO: ('logs/', 'folder already exists.')
+INFO: Runtime #1371# create_log_folder: TotalSec: 0.000 == 00.000 seconds, 00 minutes, 00 hours, 00 days
+INFO: -Argparser-
+DEBUG: argParser.fileName benchmark/polyomino-01/metapod.txt
+DEBUG: argParser.timeLimit 300
+DEBUG: argParser.model Model.Standard
+INFO: Runtime #1372# argparser: TotalSec: 0.001 == 00.001 seconds, 00 minutes, 00 hours, 00 days
+INFO: -FileParser-
+DEBUG: > File exists: benchmark/polyomino-01/metapod.txt
+DEBUG: your current path to the project is : 
+ /home/rzepka/runColor/SatHelper/examples
+DEBUG: your folder contains these files: 
+['script.sh', 'benchmark_hard_81.txt', 'glucose', 'quicksand', 'main3.py', 'nohup_5Mail.out', 'simple.cnf', 'kissat_mac', '__pycache__', 'benchmark2.txt', 'runExperiment2.sh', 'glucose-4.2.1', '.DS_Store', 'benchmark18-01-2023--11-17-24.txt', '04-04-2023--23-33-benchmark-txt', 'benchmark_easy_1.txt', 'mainTest.py', 'example.txt', '_nohup_process.out', 'benchmark5.txt', 'gui_11_old_commented.py', 'benchmark21-01-2023--10-54.txt', '_could_not_run.txt', 'abra.txt', 'email_credentials-2.txt', 'runExperiment.sh', 'benchmark_done', 'benchmark18-01-2023--11-17-27.txt', 'benchmark18-01-2023--11-17-26.txt', 'glucose-folder', 'benchmark21.txt', 'kissat_linux', 'benchmark3.txt', 'processed_files.txt', 'coloring.cnf', 'benchmark18-01-2023--11-17.txt', 'benchmark_hard_71.txt', 'runTests.sh', '.idea', 'benchmark_easy_15.txt', '_original examples', 'output.txt', 'runTests-results.txt', 'nohup.out', 'benchmark4.txt', 'sample3.cnf', 'benchmark.txt', 'benchmark6.txt', 'email_credentials-1.txt', '_main_check_process.py', 'src', '_running_process.txt', 'solver', 'sent_emails.txt', 'benchmark1.txt', 'tests-scripts', 'glucose_mac', 'pyproject.toml', 'email_credentials3.txt', 'runExperiment3.sh', 'graph_coloring.cnf', 'special-heptomino2.txt', 'email_credentials-3.txt', 'benchmark18-01-2023--11-17-1.txt', 'results_os_walk.txt', 'main5Mails.py', 'tests', 'runTestsAndSaveResults.sh', 'benchmark', '.pytest_cache', 'img', 'simple2.cnf', 'benchmark18-01-2023--11-17-5.txt', 'results_find.txt', 'runExperimentAll.sh', 'benchmark18-01-2023--11-17-9.txt', 'benchmark_todo', 'sleep.py', 'email_data.txt', 'logs', 'data']
+DEBUG: allPixels  = 280
+DEBUG: totalPixel = 280
+DEBUG:  fPProfiler 
+                    Function: "_check_all" from file /home/rzepka/runColor/SatHelper/examples/src/_fileparser.py
+                    Execution Time: TotalSec: 0.026 == 00.026 seconds, 00 minutes, 00 hours, 00 days
+                    Average CPU Usage: 22.22656249999999%
+                    Minimum CPU Usage: 0.0%
+                    Maximum CPU Usage: 100.0%
+                    Memory Usage Before: svmem(total=507123982336, available=461765595136, percent=8.9, used=42512392192, free=381213880320, active=42539995136, inactive=78831095808, buffers=301195264, cached=83096514560, shared=2670592, slab=3801604096)
+                    Memory Usage After: svmem(total=507123982336, available=461754109952, percent=8.9, used=42524143616, free=381199654912, active=42550943744, inactive=78833836032, buffers=301195264, cached=83098988544, shared=2670592, slab=3801604096)
+                    Memory Before: 49471488, 
+                    Memory After: 49573888, 
+                    Memory Consumed: 102400
+                    Memory Before B2H: 47.2M
+                    Memory After B2H: 47.3M
+                    Memory Consumed B2H: 100.0K
+                    
+INFO: Runtime #1373# fileparser: TotalSec: 0.028 == 00.028 seconds, 00 minutes, 00 hours, 00 days
+DEBUG: fileParserFileParser(fileName='benchmark/polyomino-01/metapod.txt', timeLimit=300, debugMode=True)
+INFO: -ImageCreator-
+DEBUG: created folder : img/01-07-2023--00-21-benchmark__polyomino-01__metapod-txt/
+INFO: Runtime #1374# imageparser: TotalSec: 0.010 == 00.010 seconds, 00 minutes, 00 hours, 00 days
+INFO: -ClauselCalculator-
+INFO:  - create Variables - 
+INFO:  cV = (None, '\n                    Function: "_createTheVariables" from file /home/rzepka/runColor/SatHelper/examples/src/_clauselCalculator.py\n                    Execution Time: TotalSec: 0.048 == 00.048 seconds, 00 minutes, 00 hours, 00 days\n                    Average CPU Usage: 25.05%\n                    Minimum CPU Usage: 0.0%\n                    Maximum CPU Usage: 100.0%\n                    Memory Usage Before: svmem(total=507123982336, available=461617545216, percent=9.0, used=42659930112, free=381042958336, active=42687414272, inactive=78853980160, buffers=301195264, cached=83119898624, shared=2682880, slab=3802144768)\n                    Memory Usage After: svmem(total=507123982336, available=461568417792, percent=9.0, used=42709635072, free=380988960768, active=42738937856, inactive=78858846208, buffers=301195264, cached=83124191232, shared=2682880, slab=3802144768)\n                    Memory Before: 52469760, \n                    Memory After: 57147392, \n                    Memory Consumed: 4677632\n                    Memory Before B2H: 50.0M\n                    Memory After B2H: 54.5M\n                    Memory Consumed B2H: 4.5M\n                    ')
+INFO:  - create equivalents - 
+INFO:  cte = (None, '\n                    Function: "_createTheEquivalents" from file /home/rzepka/runColor/SatHelper/examples/src/_clauselCalculator.py\n                    Execution Time: TotalSec: 0.014 == 00.014 seconds, 00 minutes, 00 hours, 00 days\n                    Average CPU Usage: 25.5203125%\n                    Minimum CPU Usage: 0.0%\n                    Maximum CPU Usage: 100.0%\n                    Memory Usage Before: svmem(total=507123982336, available=461566697472, percent=9.0, used=42711310336, free=380987154432, active=42739036160, inactive=78858932224, buffers=301195264, cached=83124322304, shared=2682880, slab=3802144768)\n                    Memory Usage After: svmem(total=507123982336, available=461560365056, percent=9.0, used=42717147136, free=380979122176, active=42743848960, inactive=78860632064, buffers=301195264, cached=83126517760, shared=2682880, slab=3802144768)\n                    Memory Before: 57384960, \n                    Memory After: 57384960, \n                    Memory Consumed: 0\n                    Memory Before B2H: 54.7M\n                    Memory After B2H: 54.7M\n                    Memory Consumed B2H: 0B\n                    ')
+INFO:  - create Exactly One For The Pixels - 
+INFO:  ceoftpProfiler = (None, '\n                    Function: "_createExactlyOneForThePixels" from file /home/rzepka/runColor/SatHelper/examples/src/_clauselCalculator.py\n                    Execution Time: TotalSec: 11.928 == 11.928 seconds, 00 minutes, 00 hours, 00 days\n                    Average CPU Usage: 24.617187499999996%\n                    Minimum CPU Usage: 0.0%\n                    Maximum CPU Usage: 100.0%\n                    Memory Usage Before: svmem(total=507123982336, available=461559455744, percent=9.0, used=42718048256, free=380978089984, active=42745913344, inactive=78860754944, buffers=301195264, cached=83126648832, shared=2682880, slab=3802144768)\n                    Memory Usage After: svmem(total=507123982336, available=458216919040, percent=9.6, used=46061039616, free=378226577408, active=46092902400, inactive=78270300160, buffers=301195264, cached=82535170048, shared=2695168, slab=3795107840)\n                    Memory Before: 57384960, \n                    Memory After: 233926656, \n                    Memory Consumed: 176541696\n                    Memory Before B2H: 54.7M\n                    Memory After B2H: 223.1M\n                    Memory Consumed B2H: 168.4M\n                    ')
+INFO:  - create Exactly One For The Possible Play stone - 
+INFO: ceoftppProfiler = (None, '\n                    Function: "_createExactlyOneForThePossiblePlaystone" from file /home/rzepka/runColor/SatHelper/examples/src/_clauselCalculator.py\n                    Execution Time: TotalSec: 25.743 == 25.743 seconds, 00 minutes, 00 hours, 00 days\n                    Average CPU Usage: 24.468749999999996%\n                    Minimum CPU Usage: 0.0%\n                    Maximum CPU Usage: 100.0%\n                    Memory Usage Before: svmem(total=507123982336, available=458214338560, percent=9.6, used=46063620096, free=378223996928, active=46094966784, inactive=78270300160, buffers=301195264, cached=82535170048, shared=2695168, slab=3795107840)\n                    Memory Usage After: svmem(total=507123982336, available=455690682368, percent=10.1, used=48587276288, free=374958526464, active=48599347200, inactive=79012028416, buffers=301207552, cached=83276972032, shared=2695168, slab=3809431552)\n                    Memory Before: 233926656, \n                    Memory After: 607518720, \n                    Memory Consumed: 373592064\n                    Memory Before B2H: 223.1M\n                    Memory After B2H: 579.4M\n                    Memory Consumed B2H: 356.3M\n                    ')
+INFO:  - created All Variables successfully - 
+INFO:  - start printing File - 
+INFO: pffProfiler = (None, '\n                    Function: "printFormulaFile" from file /home/rzepka/runColor/SatHelper/examples/src/sathelper.py\n                    Execution Time: TotalSec: 27.758 == 27.758 seconds, 00 minutes, 00 hours, 00 days\n                    Average CPU Usage: 24.076562499999998%\n                    Minimum CPU Usage: 0.0%\n                    Maximum CPU Usage: 100.0%\n                    Memory Usage Before: svmem(total=507123982336, available=455690682368, percent=10.1, used=48587276288, free=374958526464, active=48600895488, inactive=79012028416, buffers=301207552, cached=83276972032, shared=2695168, slab=3809431552)\n                    Memory Usage After: svmem(total=507123982336, available=474540789760, percent=6.4, used=29737127936, free=396095590400, active=29800583168, inactive=76730171392, buffers=301215744, cached=80990048256, shared=2695168, slab=3789611008)\n                    Memory Before: 607518720, \n                    Memory After: 607793152, \n                    Memory Consumed: 274432\n                    Memory Before B2H: 579.4M\n                    Memory After B2H: 579.6M\n                    Memory Consumed B2H: 268.0K\n                    ')
+INFO:  - start printing finished - 
+INFO: - started Solving Sat -
+DEBUG: Platform: linux
+DEBUG: Runtime #1377# " _solving_SAT ": TotalSec: 6.149 == 06.149 seconds, 00 minutes, 00 hours, 00 days
+INFO: Runtime #1377# " _solving_SAT ": TotalSec: 6.150 == 06.150 seconds, 00 minutes, 00 hours, 00 days
+INFO: - img/01-07-2023--00-21-benchmark__polyomino-01__metapod-txt/_file_problem.cnf.res with 111 MB deleted successfully -
+INFO: - img/01-07-2023--00-21-benchmark__polyomino-01__metapod-txt/_file_problem.cnf with 111 MB deleted successfully -
+INFO: -SAT finished-
+INFO: self.sh.solution: SATISFIABLE
+DEBUG: Saving {img/01-07-2023--00-21-benchmark__polyomino-01__metapod-txt/_finalSolution.png}
+INFO: Runtime #1376# _extractInfos & img creation: TotalSec: 0.383 == 00.383 seconds, 00 minutes, 00 hours, 00 days
+INFO: Program finished
+DEBUG: cLOUProfiler 
+                    Function: "_createLogicOriginalUntouched" from file /home/rzepka/runColor/SatHelper/examples/src/_clauselCalculator.py
+                    Execution Time: TotalSec: 72.102 == 12.102 seconds, 01 minutes, 00 hours, 00 days
+                    Average CPU Usage: 24.459374999999998%
+                    Minimum CPU Usage: 0.0%
+                    Maximum CPU Usage: 100.0%
+                    Memory Usage Before: svmem(total=507123982336, available=461618577408, percent=9.0, used=42658897920, free=381043990528, active=42686898176, inactive=78853980160, buffers=301195264, cached=83119898624, shared=2682880, slab=3802144768)
+                    Memory Usage After: svmem(total=507123982336, available=472724291584, percent=6.8, used=31553626112, free=394395222016, active=31617175552, inactive=76614205440, buffers=301215744, cached=80873918464, shared=2695168, slab=3789221888)
+                    Memory Before: 52215808, 
+                    Memory After: 628297728, 
+                    Memory Consumed: 576081920
+                    Memory Before B2H: 49.8M
+                    Memory After B2H: 599.2M
+                    Memory Consumed B2H: 549.4M
+                    
+DEBUG: p_res 0
+INFO: Finished
+INFO: Runtime #1369# main without data saving: TotalSec: 72.403 == 12.403 seconds, 01 minutes, 00 hours, 00 days
+DEBUG: resultProfiler 
+                    Function: "run" from file src/_main.py
+                    Execution Time: TotalSec: 72.543 == 12.543 seconds, 01 minutes, 00 hours, 00 days
+                    Average CPU Usage: 23.4375%
+                    Minimum CPU Usage: 0.0%
+                    Maximum CPU Usage: 100.0%
+                    Memory Usage Before: svmem(total=507123982336, available=461779898368, percent=8.9, used=42497843200, free=381230694400, active=42527637504, inactive=78828613632, buffers=301195264, cached=83094249472, shared=2658304, slab=3801546752)
+                    Memory Usage After: svmem(total=507123982336, available=473261969408, percent=6.7, used=31015948288, free=394932891648, active=31079206912, inactive=76614205440, buffers=301215744, cached=80873926656, shared=2695168, slab=3789221888)
+                    Memory Before: 49229824, 
+                    Memory After: 50274304, 
+                    Memory Consumed: 1044480
+                    Memory Before B2H: 46.9M
+                    Memory After B2H: 47.9M
+                    Memory Consumed B2H: 1020.0K
+                    
+INFO: Runtime #1370# complete_main: TotalSec: 72.545 == 12.545 seconds, 01 minutes, 00 hours, 00 days
