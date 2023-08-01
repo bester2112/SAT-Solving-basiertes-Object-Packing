@@ -1,0 +1,1 @@
+parallel -j 4 ./solver {} -s=300 ::: benchmark/**/*.txt
